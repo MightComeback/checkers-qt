@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameWindow</class>
+ <widget class="QMainWindow" name="GameWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>521</width>
+    <height>540</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>240</width>
+    <height>240</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>GameWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QGraphicsView" name="boardView">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>122</horstretch>
+        <verstretch>122</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>521</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuGra">
+    <property name="title">
+     <string>Гра</string>
+    </property>
+    <addaction name="actionNewGame"/>
+    <addaction name="actionSettings"/>
+    <addaction name="actionRulesMenu"/>
+    <addaction name="actionInfoMenu"/>
+   </widget>
+   <addaction name="menuGra"/>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="movable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>LeftToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNewGame"/>
+   <addaction name="actionSettings"/>
+   <addaction name="actionRulesMenu"/>
+   <addaction name="actionInfoMenu"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionNewGame">
+   <property name="icon">
+    <iconset resource="resources.qrc">
+     <normaloff>:/imgs/res/game</normaloff>:/imgs/res/game</iconset>
+   </property>
+   <property name="text">
+    <string>Нова гра</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="icon">
+    <iconset resource="settings.qrc">
+     <normaloff>:/settings/interface.png</normaloff>:/settings/interface.png</iconset>
+   </property>
+   <property name="text">
+    <string>Налаштування</string>
+   </property>
+  </action>
+  <action name="actionInfoMenu">
+   <property name="icon">
+    <iconset resource="information.qrc">
+     <normaloff>:/information.png</normaloff>:/information.png</iconset>
+   </property>
+   <property name="text">
+    <string>Інформація</string>
+   </property>
+   <property name="toolTip">
+    <string>Інформація</string>
+   </property>
+  </action>
+  <action name="actionRulesMenu">
+   <property name="icon">
+    <iconset resource="rules.qrc">
+     <normaloff>:/rules.png</normaloff>:/rules.png</iconset>
+   </property>
+   <property name="text">
+    <string>Правила</string>
+   </property>
+   <property name="toolTip">
+    <string>Правила</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+  <include location="settings.qrc"/>
+  <include location="rules.qrc"/>
+  <include location="information.qrc"/>
+ </resources>
+ <connections/>
+</ui>

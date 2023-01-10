@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InfoWidget</class>
+ <widget class="QWidget" name="InfoWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>507</width>
+    <height>491</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="styleSheet">
+      <string notr="true">margin:0 40%;
+border:0;
+height:30;
+font-size:18px;
+background-color:transparent;
+color:black;</string>
+     </property>
+     <property name="text">
+      <string>Інформація</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;
+&lt;head/&gt;
+&lt;body&gt;
+&lt;p&gt;Гра була розроблена як проєкт для курсової роботи студентами групи КНТ-211, такими як:&lt;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Кузнецов Іван Сергійович&lt;/li&gt;
+&lt;li&gt;Вербова Катерина Олександрівна&lt;/li&gt;
+&lt;li&gt;Абрамов Олексій Олександрович&lt;/li&gt;
+&lt;li&gt;Романовська Єлизавета Іванівна&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</string>
+     </property>
+     <property name="textFormat">
+      <enum>Qt::AutoText</enum>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEdit_2">
+     <property name="styleSheet">
+      <string notr="true">margin:0 40%;
+border:0;
+height:30;
+background-color:transparent;
+color:black;</string>
+     </property>
+     <property name="text">
+      <string>2022</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

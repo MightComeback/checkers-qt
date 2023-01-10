@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/settings">
+        <file>interface.png</file>
+    </qresource>
+    <qresource prefix="/"/>
+</RCC>

@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/imgs">
+        <file>res/game</file>
+    </qresource>
+</RCC>

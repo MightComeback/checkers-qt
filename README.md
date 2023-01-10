@@ -1,2 +1,2 @@
 # checkers-qt
- QT C++ Checkers game.
+ QT C++ Checkers course project game.

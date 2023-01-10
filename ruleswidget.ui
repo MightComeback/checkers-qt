@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>RulesWidget</class>
+ <widget class="QWidget" name="RulesWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>579</width>
+    <height>567</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>200</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Правила</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>true</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="styleSheet">
+      <string notr="true">margin:0 40%;
+border:0;
+height:30;
+font-size:18px;
+background-color:transparent;
+color:black;</string>
+     </property>
+     <property name="text">
+      <string>ПРАВИЛА</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="styleSheet">
+      <string notr="true">border:0;
+background-color:transparent;</string>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>540</width>
+        <height>630</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QLabel" name="label">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:black;
+</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;
+&lt;head\&gt;
+&lt;body&gt;
+&lt;span&gt;&lt;b&gt;Правила взяття :&lt;/b&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Побиті шашки і дамки знімаються тільки після завершення ходу.&lt;/li&gt;
+&lt;li&gt;При взятті проста шашка, що знаходиться поруч із шашкою суперника, за якою є вільне поле, переноситься через цю шашку на це вільне поле. Якщо є можливість продовжити взяття інших шашок суперника, то це взяття триває, поки шашка, що б'є, не досягне положення, з якого бій неможливий. Взяття простою шашкою проводиться як вперед, так і назад.&lt;/li&gt;
+&lt;li&gt;Дамка б'є по діагоналі, як вперед, так і назад, і стає на будь-яке вільне поле після побитої шашки. Аналогічно, дамка може бити кілька фігур суперника і повинна бити доти, доки це можливо.&lt;/li&gt;
+&lt;li&gt;При бою через дамкове поле проста шашка перетворюється на дамку і продовжує бій за правилами дамки.&lt;/li&gt;
+&lt;li&gt;При взятті застосовується правило турецького удару - за один хід шашку супротивника можна побити тільки один раз. Тобто, якщо під час бою кількох шашок противника шашка або дамка повторно виходить на вже побиту шашку, то хід зупиняється.&lt;/li&gt;
+&lt;li&gt;При декількох варіантах взяття, наприклад, одну шашку або дві, гравець вибирає варіант взяття на свій розсуд.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;span&gt;&lt;b&gt;Виграш партії&lt;/b&gt; &lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Партія вважається виграною в таких випадках:&lt;/li&gt;
+&lt;ol&gt;
+&lt;li&gt;якщо в одного із суперників побиті всі шашки;&lt;/li&gt;
+&lt;li&gt;якщо шашки і дамки одного із суперників знерухомлені, тобто він не має можливості зробити хід, коли прийшла його черга. &lt;/li&gt;
+&lt;/ol&gt;
+&lt;/ul&gt;
+&lt;span&gt;&lt;b&gt;Нічия&lt;/b&gt;&lt;/span&gt;
+&lt;ul&gt;
+&lt;li&gt;Після 50 ходів у партії, якщо ні одна зі сторін не перемогла, партія вважається закінченою внічию&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+
+</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
